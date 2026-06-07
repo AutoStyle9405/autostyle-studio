@@ -1,7 +1,6 @@
 export default function Contact() {
   return (
     <main className="pt-32 px-5 pb-24 bg-autoblack">
-
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10">
 
         <div>
@@ -36,9 +35,14 @@ export default function Contact() {
               ✉️ autostyle9405@gmail.com
             </p>
 
-            <p className="bg-zinc-950 border border-white/10 rounded-2xl p-5">
-              📍 Лозница, България
-            </p>
+            <a
+              href="https://maps.google.com/?q=гр.+Лозница,+ул.+Витоша+21"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-zinc-950 border border-white/10 rounded-2xl p-5 hover:border-red-600 transition"
+            >
+              📍 гр. Лозница, ул. Витоша 21
+            </a>
 
             <p className="bg-zinc-950 border border-white/10 rounded-2xl p-5">
               🕘 Понеделник - Събота: 09:30 - 18:00
@@ -90,7 +94,7 @@ export default function Contact() {
           <div className="bg-zinc-950 border border-white/10 rounded-[2rem] overflow-hidden">
 
             <iframe
-              src="https://www.google.com/maps?q=Loznitsa,Bulgaria&output=embed"
+              src="https://www.google.com/maps?q=гр.+Лозница,+ул.+Витоша+21&output=embed"
               width="100%"
               height="400"
               style={{ border: 0 }}
@@ -105,7 +109,6 @@ export default function Contact() {
         </div>
 
       </div>
-
     </main>
   );
 }
