@@ -28,6 +28,15 @@ export default function Footer() {
         autostyle9405@gmail.com
       </p>
 
+      <a
+        href="https://maps.google.com/?q=гр.+Лозница,+ул.+Витоша+21"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-white/40 hover:text-autored transition mt-2"
+      >
+        📍 гр. Лозница, ул. Витоша 21
+      </a>
+
     </footer>
   );
 }
