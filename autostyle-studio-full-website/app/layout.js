@@ -55,6 +55,16 @@ export default function RootLayout({ children }) {
             <Instagram size={26} />
           </a>
 
+          <a
+            href="https://www.tiktok.com/@autostyle.studio?is_from_webapp=1&sender_device=pc"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="TikTok"
+            className="bg-black border border-white/20 hover:border-white text-white p-4 rounded-full shadow-2xl transition hover:scale-110 text-center font-black"
+          >
+            ♪
+          </a>
+
         </div>
 
         <Footer />

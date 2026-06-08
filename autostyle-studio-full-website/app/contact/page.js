@@ -85,9 +85,14 @@ export default function Contact() {
               📞 +359 877 917 614
             </p>
 
-            <p className="bg-zinc-950 border border-white/10 rounded-2xl p-5">
+            <a
+              href="https://www.instagram.com/autostylestudioloznitsa"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-zinc-950 border border-white/10 rounded-2xl p-5 hover:border-red-600 transition"
+            >
               📸 Instagram: autostylestudioloznitsa
-            </p>
+            </a>
 
             <p className="bg-zinc-950 border border-white/10 rounded-2xl p-5">
               🎵 TikTok: autostyle.studio
@@ -177,9 +182,7 @@ export default function Contact() {
             </button>
 
             {status && (
-              <p className="text-white/70 text-sm text-center">
-                {status}
-              </p>
+              <p className="text-white/70 text-sm text-center">{status}</p>
             )}
           </form>
 
