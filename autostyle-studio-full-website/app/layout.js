@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Phone, MessageCircle, Instagram } from "lucide-react";
 
 export const metadata = {
   title: "AutoStyle Studio | Premium Car Services",
@@ -16,12 +17,43 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        <a
-          href="tel:+359876681886"
-          className="fixed bottom-6 right-6 z-50 bg-autored hover:bg-red-700 text-white px-6 py-4 rounded-full font-black shadow-2xl transition hover:scale-105"
-        >
-          📞 Обади се
-        </a>
+        <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+          <a
+            href="tel:+359876681886"
+            title="Обади се: 0876 681 886"
+            className="bg-autored hover:bg-red-700 text-white p-4 rounded-full shadow-2xl transition hover:scale-110"
+          >
+            <Phone size={26} />
+          </a>
+
+          <a
+            href="tel:+359877917614"
+            title="Обади се: 0877 917 614"
+            className="bg-autored hover:bg-red-700 text-white p-4 rounded-full shadow-2xl transition hover:scale-110"
+          >
+            <Phone size={26} />
+          </a>
+
+          <a
+            href="https://wa.me/359876681886"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="WhatsApp"
+            className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-2xl transition hover:scale-110"
+          >
+            <MessageCircle size={26} />
+          </a>
+
+          <a
+            href="https://www.instagram.com/autostylestudioloznitsa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Instagram"
+            className="bg-pink-600 hover:bg-pink-700 text-white p-4 rounded-full shadow-2xl transition hover:scale-110"
+          >
+            <Instagram size={26} />
+          </a>
+        </div>
 
         <Footer />
       </body>
