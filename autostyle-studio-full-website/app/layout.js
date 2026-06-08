@@ -1,7 +1,8 @@
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Phone, MessageCircle } from "lucide-react";
+import { Phone } from "lucide-react";
+import { FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
 
 export const metadata = {
   title: "AutoStyle Studio | Premium Car Services",
@@ -18,20 +19,21 @@ export default function RootLayout({ children }) {
         {children}
 
         <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+
           <a
             href="tel:+359876681886"
             title="0876 681 886"
-            className="bg-autored hover:bg-red-700 text-white p-4 rounded-full shadow-2xl transition hover:scale-110 text-center"
+            className="bg-autored hover:bg-red-700 text-white p-4 rounded-full shadow-2xl transition hover:scale-110"
           >
-            <Phone size={26} />
+            <Phone size={24} />
           </a>
 
           <a
             href="tel:+359877917614"
             title="0877 917 614"
-            className="bg-autored hover:bg-red-700 text-white p-4 rounded-full shadow-2xl transition hover:scale-110 text-center"
+            className="bg-autored hover:bg-red-700 text-white p-4 rounded-full shadow-2xl transition hover:scale-110"
           >
-            <Phone size={26} />
+            <Phone size={24} />
           </a>
 
           <a
@@ -39,9 +41,9 @@ export default function RootLayout({ children }) {
             target="_blank"
             rel="noopener noreferrer"
             title="WhatsApp"
-            className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-2xl transition hover:scale-110 text-center"
+            className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-2xl transition hover:scale-110"
           >
-            <MessageCircle size={26} />
+            <FaWhatsapp size={24} />
           </a>
 
           <a
@@ -49,9 +51,9 @@ export default function RootLayout({ children }) {
             target="_blank"
             rel="noopener noreferrer"
             title="Instagram"
-            className="bg-pink-600 hover:bg-pink-700 text-white w-[58px] h-[58px] rounded-full shadow-2xl transition hover:scale-110 flex items-center justify-center text-2xl font-black"
+            className="bg-gradient-to-r from-pink-500 to-purple-600 text-white p-4 rounded-full shadow-2xl transition hover:scale-110"
           >
-            ◎
+            <FaInstagram size={24} />
           </a>
 
           <a
@@ -59,10 +61,11 @@ export default function RootLayout({ children }) {
             target="_blank"
             rel="noopener noreferrer"
             title="TikTok"
-            className="bg-black border border-white/20 hover:border-white text-white w-[58px] h-[58px] rounded-full shadow-2xl transition hover:scale-110 flex items-center justify-center text-2xl font-black"
+            className="bg-black border border-white/20 text-white p-4 rounded-full shadow-2xl transition hover:scale-110"
           >
-            ♪
+            <FaTiktok size={24} />
           </a>
+
         </div>
 
         <Footer />
