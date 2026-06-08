@@ -18,9 +18,10 @@ export default function RootLayout({ children }) {
         {children}
 
         <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+
           <a
             href="tel:+359876681886"
-            title="Обади се: 0876 681 886"
+            title="0876 681 886"
             className="bg-autored hover:bg-red-700 text-white p-4 rounded-full shadow-2xl transition hover:scale-110"
           >
             <Phone size={26} />
@@ -28,14 +29,14 @@ export default function RootLayout({ children }) {
 
           <a
             href="tel:+359877917614"
-            title="Обади се: 0877 917 614"
+            title="0877 917 614"
             className="bg-autored hover:bg-red-700 text-white p-4 rounded-full shadow-2xl transition hover:scale-110"
           >
             <Phone size={26} />
           </a>
 
           <a
-            href="https://wa.me/359876681886"
+            href="https://wa.me/359876681886?text=Здравейте,%20интересувам%20се%20от%20вашите%20услуги.%20Искам%20да%20запиша%20час."
             target="_blank"
             rel="noopener noreferrer"
             title="WhatsApp"
@@ -45,7 +46,7 @@ export default function RootLayout({ children }) {
           </a>
 
           <a
-            href="https://www.instagram.com/autostylestudioloznitsa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+            href="https://www.instagram.com/autostylestudioloznitsa"
             target="_blank"
             rel="noopener noreferrer"
             title="Instagram"
@@ -53,6 +54,7 @@ export default function RootLayout({ children }) {
           >
             <Instagram size={26} />
           </a>
+
         </div>
 
         <Footer />
