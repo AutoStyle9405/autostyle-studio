@@ -98,7 +98,7 @@ export default function Contact() {
             </p>
 
             <a
-              href="https://maps.google.com/?q=гр.+Лозница,+ул.+Витоша+21"
+              href="https://maps.app.goo.gl/DDToe1rZouZ9w8437"
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-zinc-950 border border-white/10 rounded-2xl p-5 hover:border-red-600 transition"

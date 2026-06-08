@@ -29,7 +29,7 @@ export default function Footer() {
       </p>
 
       <a
-        href="https://maps.google.com/?q=гр.+Лозница,+ул.+Витоша+21"
+        href="https://maps.app.goo.gl/DDToe1rZouZ9w8437"
         target="_blank"
         rel="noopener noreferrer"
         className="text-white/40 hover:text-autored transition mt-2"
