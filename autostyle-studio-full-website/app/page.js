@@ -32,6 +32,21 @@ const latestProjects = [
   },
 ];
 
+const reviews = [
+  {
+    name: "Иван М.",
+    text: "Изключително доволен съм. Бронята беше възстановена и боядисана много добре. Колата изглежда много по-свежа.",
+  },
+  {
+    name: "Георги П.",
+    text: "Полираха фаровете ми и разликата беше огромна. По-добра визия и много по-чист резултат.",
+  },
+  {
+    name: "Николай К.",
+    text: "Професионално отношение, точна работа и страхотен финиш. Определено бих препоръчал AutoStyle Studio.",
+  },
+];
+
 export default function Home() {
   return (
     <main className="pt-20">
@@ -164,6 +179,35 @@ export default function Home() {
             ))}
           </div>
 
+        </div>
+      </section>
+
+      <section className="py-24 px-5 bg-black">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl md:text-6xl font-black text-center mb-14">
+            Какво казват <span className="text-autored">клиентите</span>
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {reviews.map((review) => (
+              <div
+                key={review.name}
+                className="bg-zinc-950 border border-white/10 rounded-[2rem] p-8 hover:border-red-600 transition"
+              >
+                <div className="text-yellow-400 text-2xl mb-4">
+                  ⭐⭐⭐⭐⭐
+                </div>
+
+                <p className="text-white/70 mb-6 leading-relaxed">
+                  {review.text}
+                </p>
+
+                <p className="font-black text-white">
+                  – {review.name}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
