@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ChatBot from "../components/ChatBot";
 import { Phone } from "lucide-react";
 import { FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
 
@@ -61,7 +62,7 @@ export default function RootLayout({ children }) {
             <FaTiktok size={24} />
           </a>
         </div>
-
+<ChatBot />
         <Footer />
       </body>
     </html>
