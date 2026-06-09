@@ -186,18 +186,28 @@ export default function Contact() {
             )}
           </form>
 
-          <div className="bg-zinc-950 border border-white/10 rounded-[2rem] overflow-hidden">
-            <iframe
-              src="https://www.google.com/maps?q=гр.+Лозница,+ул.+Витоша+21&output=embed"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="AutoStyle Studio Location"
-            ></iframe>
-          </div>
+         <div className="space-y-4">
+  <div className="bg-zinc-950 border border-white/10 rounded-[2rem] overflow-hidden">
+    <iframe
+     src="https://maps.google.com/maps?q=43.374345,26.590232&z=18&output=embed"
+      width="100%"
+      height="400"
+      style={{ border: 0 }}
+      allowFullScreen
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="AutoStyle Studio Location"
+    ></iframe>
+  </div>
+  <a
+    href="https://maps.google.com/?q=43.374345,26.590232"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block bg-autored hover:bg-red-700 text-center py-4 rounded-2xl font-black transition"
+  >
+    📍 Отвори навигация до AutoStyle Studio
+  </a>
+</div>
         </div>
       </div>
     </main>
